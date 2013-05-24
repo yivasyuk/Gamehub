@@ -1,0 +1,64 @@
+﻿html
+{
+	/*background-color: #e2e2e2;*/
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	background: -webkit-gradient(linear, 100% 0%, 62% 77%, from(#000000), to(#FEDCD3));
+	background-color: #917E79;
+}
+
+body {
+    /*background-color: #fff;*/
+    /*border-top: solid 10px #000;*/
+    color: #333;
+    font-size: .85em;
+    font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
+    margin: 10px auto;
+    padding: 0;
+	max-width: 850px
+}
+
+header, footer, hgroup,
+nav, section {
+    display: block;
+}
+header, footer, #body {
+	padding: 10px 20px
+}
+
+nav {
+	float: right;
+}
+nav ul {
+	list-style: none;
+}
+
+nav ul li {
+	float: left;
+	padding: 0  10px;
+
+}
+
+nav a
+{
+	color: #C5B398;
+	text-decoration: none
+}
+
+footer
+{
+	clear: both; /*background-color: #e2e2e2;*/
+	font-size: .8em;
+	height: 100px;
+}
+
+#topHeader h1 {
+	margin: 0 20px;
+}
+
+#topHeader
+{
+	background-color: #D5B9B2;
+	background: -webkit-gradient(linear, 63% 0%, 62% 77%, from(#111414), to(#FEDCD3));
+}

@@ -1,0 +1,40 @@
+﻿<h3>Gomoku game</h3>
+
+@section onloadscript
+{
+   <script>       
+       $(function () {
+           var gomoku = new Gomoku({
+               boardSize: 600,
+               containerId: 'content'
+           });
+
+           $('#undo').click(function () {
+               gomoku.undo();
+           });
+           $('#analyseForward').click(function () {
+               gomoku.analyse(true);
+           });
+           $('#analyseBack').click(function () {
+               gomoku.analyse(false);
+           });
+           $('#showAll').click(function () {
+               gomoku.show(false);
+           });
+           $('#newGame').click(function () {
+               gomoku.newGame();
+           });
+       });
+
+    </script>
+}
+
+<div id="content">
+    <div>
+        <input id="undo" type="button" value="Undo" />
+        <input id="newGame" type="button" value="New Game" />
+        <input id="analyseForward" type="button" value="Analyse Forward" />
+        <input id="analyseBack" type="button" value="Analyse Back" />
+        <input id="showAll" type="button" value="Show All" />
+    </div>
+</div>

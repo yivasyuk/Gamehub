@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Gamehub Application</title>
+@*        <meta name="viewport" content="width=device-width" />*@
+        @Styles.Render("~/Content/css")
+        @Scripts.Render("~/bundles/modernizr")
+        @Scripts.Render("~/bundles/jquery")
+        
+        @RenderSection("onloadscript", required: false)
+    </head>
+    <body>
+        <header id="topHeader">
+            <h1>Game Hub</h1>
+            <nav>
+                <ul>
+                    <li>@Ajax.ActionLink("Home", "Index", "Home", null)</li>
+                    <li>@Ajax.ActionLink("Game", "Index", "Game", null)</li>
+                </ul>
+            </nav>
+        </header>
+        <div id="body">
+            <section class="content-wrapper">
+                @RenderBody()
+            </section>
+        </div>
+        <footer>
+            <div class="content-wrapper">
+                <div class="float-left">
+                    <p>&copy; @DateTime.Now.Year - Gamehub Application</p>
+                </div>
+            </div>
+        </footer>
+
+        @Scripts.Render("~/bundles/site")
+    </body>
+</html>
